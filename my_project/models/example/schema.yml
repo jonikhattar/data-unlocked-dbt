@@ -3,11 +3,9 @@ version: 2
 
 models:
   - name: merge_tables
-    description: "data unlocked"
     columns:
-      - job_id: job_id
-          description: "The primary key for this table"
-        tests:
+      - name: * # Include all columns from the merged table
+    description: 'Merged Candidates Event and Candidates Online'
 
 
 
