@@ -1,12 +1,12 @@
 -- models/merge_tables.sql
 
-WITH table_1_data AS (
-    SELECT * FROM {{ ref('my_schema.table_1') }}
+WITH Candidates Online AS (
+    SELECT * FROM {{ ref('Candidates Online') }}
 ),
-table_2_data AS (
-    SELECT * FROM {{ ref('my_schema.table_2') }}
+Candidates Event AS (
+    SELECT * FROM {{ ref('Candidates Event') }}
 )
 
-SELECT * FROM table_1_data
+SELECT * FROM Candidates Online
 UNION ALL
-SELECT * FROM table_2_data
+SELECT * FROM Candidates Event
