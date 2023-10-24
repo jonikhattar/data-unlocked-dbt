@@ -1,0 +1,19 @@
+
+name: my_project
+version: 2
+
+profile: joni_snowflake  # Use the Snowflake profile you defined in profiles.yml
+
+config-version: 2
+
+models:
+  my_project:
+    +merge_tables:
+      materialized: table
+
+seeds: {}
+snapshots: {}
+
+analysis: {}
+tests: {}
+
