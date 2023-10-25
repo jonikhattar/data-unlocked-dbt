@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: merge_tables
+    columns:
+      - name: * # Include all columns from the merged table
+    description: 'Merged Candidates Event and Candidates Online'
+
+
+
