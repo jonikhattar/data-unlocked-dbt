@@ -1,0 +1,13 @@
+emerald:
+  target: emerald-target
+  outputs:
+    emerald-target:
+      type: snowflake
+      threads: 1
+      account: "matillion.eu-central-1"
+      user: "EMD_TEST"
+      password: "ahZ9vei2eexu"
+      role: SYSADMIN
+      database: "DEV_DB"
+      warehouse: "DEV_WH"
+      schema: "PUBLIC"
